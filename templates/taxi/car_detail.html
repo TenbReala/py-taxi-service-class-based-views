@@ -11,7 +11,7 @@
     {% for driver in car.drivers.all %}
       <li>{{ driver.username }}</li>
     {% empty %}
-      <p>Car haven't a drivers</p>
+      <p>Car doesn't have any drivers</p>
     {% endfor %}
   </ul>
 {% endblock %}

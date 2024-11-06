@@ -6,7 +6,7 @@
     {% for car in car_list%}
       <li><a href="{% url 'taxi:car-detail' car.id %}">{{ car.model }}</a></li>
     {% empty %}
-      <p>There is no car</p>
+      <p>There are no cars</p>
     {% endfor %}
   </ul>
 {% endblock %}
